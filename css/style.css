@@ -1,0 +1,109 @@
+body{
+    font-family: 'Berlin Sans FB Demi', sans-serif; /*essa é a fonte da logo*/
+    font-weight: bold;
+}
+
+main{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menu{
+    background-color: #fbf6ef !important;
+}
+
+#login-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    width: 100px;
+    margin-left: 8px;
+}
+
+#login_nav{
+    padding: 8px 16px;
+}
+
+/*p{
+    text-indent: 40px;
+}*/
+
+.navbar-brand img{
+    text-align: center;
+    height: 155px;
+    width: 310px;
+}
+
+.login-img{
+    padding: 3px;
+}
+div.dev{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer{
+    bottom: 0 !important; 
+    left: 0 !important;
+    background-color: #fbf6ef !important;
+    color: #592e0d;
+    width: 100% !important;
+}
+
+.nav-item a, #home{
+    color: #592e0d !important;
+}
+
+#home:hover, 
+.navbar-nav .nav-link.active:hover,
+.footer .nav-link:hover {
+    color: #d08b2a !important;
+    text-decoration: underline; 
+}
+
+
+.login-botao a{
+    color: #592e0d;
+   border-color: #d08b2a;
+   background-color: #d08b2a;
+   font-weight: bold;
+}
+
+
+.login-botao a:hover{
+    background-color: #592e0d !important;
+    border-color: #d08b2a;
+ }
+ 
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+  color: #592e0d !important;
+}
+
+
+ html, body {
+    height: 100% !important; /* Garante que a altura total da página seja usada */
+}
+
+@media(min-width: 768px){
+    html, body {
+        height: 100% !important; /* Garante que a altura total da página seja usada */
+    }
+}
+
+.botao:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+a.btn:active {
+    box-shadow: none !important; /* Remove sombra ativa ao clicar */
+}
+
+

@@ -1,0 +1,57 @@
+/* Estiliza os campos inválidos */
+.is-invalid {
+    border-color: red; /* Cor da borda para destacar o campo inválido */
+    position: relative;
+}
+
+/* Adiciona o ícone "X" ao lado direito do campo */
+.is-invalid::after {
+    content: '✖'; /* Ícone de "X" */
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.required {
+    font-weight: bold;
+    color: #592e0d; /* Define a cor padrão */
+}
+
+.required.invalid {
+    color: red; /* Cor vermelha para quando o campo não for preenchido */
+}
+
+/* Adiciona o estilo para o asterisco */
+.required::after {
+
+    color: #592e0d; /* Cor padrão do asterisco */
+    margin-left: 5px;
+}
+
+.required.invalid::after {
+    color: red; /* Cor vermelha do asterisco quando o campo está inválido */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem; /* Ajuste o tamanho conforme necessário */
+    margin-top: 5px;
+}
+
+/* Estilos para o botão de buscar */
+#btn-outline-success {
+    color: #592e0d;               /* Cor do texto */
+    border-color: #d08b2a;       /* Cor da borda */
+    background-color: #d08b2a;   /* Cor de fundo */
+    font-weight: bold;            /* Peso da fonte */
+}
+
+#btn-outline-success:hover {
+    background-color: #592e0d !important; /* Cor de fundo ao passar o mouse */
+    border-color: #d08b2a;                /* Cor da borda ao passar o mouse */
+    color: white;
+}
+

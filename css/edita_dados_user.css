@@ -1,0 +1,165 @@
+
+h3,h8{
+    font-weight: bold;
+    color: #592e0d !important;
+
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+main{
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: #d08b2a;
+    color: #592e0d;
+    font-weight: bold;
+}
+
+.botao:hover{
+    background-color: #592e0d !important;
+    border-color: #d08b2a;
+    color: white;
+}
+
+.cancelar-link {
+    color: #592e0d; 
+    text-decoration: none; 
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.cancelar-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+    color: #d08b2a; /* Muda a cor para laranja no hover */
+}
+
+.form-label{
+    color: #592e0d !important;
+    padding: 5px !important;
+    font-weight: bold !important;
+
+    display: block; /* Faz com que o label ocupe toda a largura disponível */
+    margin-bottom: 5px; /* Espaço entre o label e a imagem */
+}
+
+.item {
+    position: relative; /* Permite posicionar elementos absolutamente em relação a este container */
+}
+
+/* CSS para estilizar os campos de entrada */
+.form-control {
+    background-color: #fbf6ef !important; /* Cor de fundo dos campos de entrada */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.campo_radio{
+    color: #592e0d !important;
+}
+
+#image {
+    cursor: pointer;
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+    border-radius: 50%; /* Torna a imagem redonda */
+    border: 4px solid #592e0d; 
+}
+
+/* Esconde o input de arquivo */
+#fileInput {
+    display: none;
+}
+
+@media(min-width: 768px){
+    html, body {
+        height: 100% !important; /* Garante que a altura total da página seja usada */
+    }
+}
+
+/* Estiliza os campos inválidos */
+.is-invalid {
+    border-color: red; /* Cor da borda para destacar o campo inválido */
+    position: relative;
+}
+
+/* Adiciona o ícone "X" ao lado direito do campo */
+.is-invalid::after {
+    content: '✖'; /* Ícone de "X" */
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.required {
+    font-weight: bold;
+    color: #592e0d; /* Define a cor padrão */
+}
+
+.required.invalid {
+    color: red; /* Cor vermelha para quando o campo não for preenchido */
+}
+
+/* Adiciona o estilo para o asterisco */
+.required::after {
+
+    color: #592e0d; /* Cor padrão do asterisco */
+    margin-left: 5px;
+}
+
+.required.invalid::after {
+    color: red; /* Cor vermelha do asterisco quando o campo está inválido */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem; /* Ajuste o tamanho conforme necessário */
+    margin-top: 5px;
+}
+
+.d-none {
+    display: none;
+}
+
+
+#fileLabel {
+    color: #592e0d; /* Cor padrão do label */
+}
+
+#fileLabel::after {
+    content: ' *'; /* Adiciona um asterisco */
+    color: #592e0d; /* Cor padrão do asterisco */
+}
+
+#fileLabel.invalid::after {
+    color: red; /* Cor vermelha do asterisco quando o campo está inválido */
+}
+
+
+footer{
+    font-family: 'Berlin Sans FB Demi', sans-serif; /*essa é a fonte da logo*/
+    font-weight: bold;
+}
+
+/* Estilo para o link Home */
+#login_nav .navbar-brand {
+    color: #592e0d; /* Cor desejada */
+}
+
+/* Adicionando um hover para o link Home */
+#login_nav .navbar-brand:hover {
+    color: #d08b2a !important;
+    text-decoration: underline; 
+}
+

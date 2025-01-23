@@ -1,0 +1,55 @@
+CREATE TABLE `usuario` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `endereco` varchar(350) NOT NULL,
+  `data_nasc` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `pet_encontrado` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `local` varchar(50) NOT NULL,
+  `titulo` varchar(50) NOT NULL,
+  `data` varchar(10) NOT NULL,
+  `horario` varchar(10),
+  `info` varchar(600) DEFAULT 'Nenhuma informação adicional',
+  `tipo` varchar(10) NOT NULL,
+  `porte` varchar(10) NOT NULL,
+  `sexo` varchar(20) NOT NULL,
+  `id_usuario` int NOT NULL,
+  'status' varchar(30) DEFAULT 'Encontrado',
+  CONSTRAINT id_pet_encontrado_fk FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `pet_perdido` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `local` varchar(50) NOT NULL,
+  `titulo` varchar(50) NOT NULL,
+  `data` varchar(10) NOT NULL,
+  `horario` varchar(10),
+  `info` varchar(600) DEFAULT 'Nenhuma informação adicional',
+  `tipo` varchar(10) NOT NULL,
+  `porte` varchar(10) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `id_usuario` int NOT NULL,
+  'status' varchar(30) DEFAULT 'Perdido',
+  CONSTRAINT id_pet_perdido_fk FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `foto_pets_encontrado` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `id_pet_encontrado` int NOT NULL,
+  `nomeArqFoto` varchar(255),
+  FOREIGN KEY (`id_pet_encontrado`) REFERENCES `pet_encontrado`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `foto_pets_perdido` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `id_pet_perdido` int NOT NULL,
+  `nomeArqFoto` varchar(255),
+  FOREIGN KEY (`id_pet_perdido`) REFERENCES `pet_perdido`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+

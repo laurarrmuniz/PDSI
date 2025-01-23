@@ -24,3 +24,4 @@ Durante o desenvolvimento, a equipe aplicou práticas de trabalho colaborativo e
 - Gestão de tarefas e organização do projeto.
 - Design de interfaces voltadas à experiência do usuário.
 - Trabalho em equipe.
+- Testes unitários.

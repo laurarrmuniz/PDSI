@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #fbf6ef !important;
+    overflow-x: hidden;
+}
+
+main {
+    font-family: 'Berlin Sans FB Demi', sans-serif; /*essa é a fonte da logo*/
+    background-color: white;
+    width: 400px;
+    height: 500px !important;
+
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    padding: 5px;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    color: #d08b2a;
+}
+
+ img {
+    width: 300px !important;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d08b2a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button {
+    text-align: center;
+    margin: 20px;
+}
+
+ button:hover {
+    background-color: #592e0d !important;
+    border-color: #d08b2a;
+    color: white;
+}
+
+
+
+@media all AND (max-width: 600px) {
+    body {
+        margin: 0 auto;
+    }
+    main {
+        width: 90%;
+        height: 600px !important;
+    }
+}
+
+@media all AND (max-width: 280px) {
+    body {
+        margin: 0 auto;
+        width: 100%;
+    }
+    main {
+        margin: 0 auto;
+        width: 90%;
+        height: 700px !important;
+    }
+    #button {
+        margin: 10;
+    }
+    button {
+        width: 100%;
+    }
+}

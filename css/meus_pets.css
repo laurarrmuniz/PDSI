@@ -1,0 +1,52 @@
+h3 {
+    color: #592e0d;
+    margin-top: 40px;
+}
+
+/* Estilizando os títulos da tabela */
+table th {
+    background-color: #d08b2a !important; /* Cor do título da tabela */
+    color: white !important;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilizando o fundo de toda a tabela */
+table {
+    background-color: #fbf6ef !important; /* Cor de fundo da tabela */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilizando as células de todas as linhas */
+table td {
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    background-color: inherit !important; /* Pega a cor de fundo da linha */
+}
+
+/* Estilizando as linhas ímpares */
+table tr:nth-child(odd) {
+    background-color: #fbf6ef !important; /* Fundo bege para linhas ímpares */
+}
+
+/* Estilizando as linhas pares */
+table tr:nth-child(even) {
+    background-color: #ffffff !important; /* Fundo branco para linhas pares */
+}
+
+/* Alterar cor da linha ao passar o mouse */
+table tr:hover {
+    background-color: #f5d3a73c !important; /* Destaque ao passar o mouse */
+}
+
+.foto-pet {
+    width: 60px;        /* Define a largura do contêiner */
+    height: 60px;       /* Define a altura do contêiner */
+    object-fit: cover;  /* Ajusta a imagem para cobrir o contêiner, cortando as bordas se necessário */
+    max-width: 100%;    /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-height: 100%;   /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    display: block;     /* Remove possíveis espaços indesejados ao redor da imagem */
+}
+
+

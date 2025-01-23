@@ -1,0 +1,84 @@
+
+.buttom{
+    background-color: #d08b2a;
+    color: #592e0d;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttom:hover{
+    background-color: #592e0d !important;
+    border-color: #d08b2a;
+    color: white;
+ }
+
+main {
+    display: flex;            /* Ativa o Flexbox no contêiner principal */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+
+    
+}
+
+.container2 {
+    max-width: 300px; /* Define a largura máxima do formulário */
+    width: 100%;      /* Garante que o formulário ocupe toda a largura disponível dentro do contêiner */
+    padding: 20px;   /* Adiciona algum espaço ao redor do formulário */
+    text-align: center; /* Centraliza o texto do label horizontalmente */
+    display: block;     /* Garante que o label seja tratado como um bloco */
+    color: #592e0d;
+}
+
+.form-label{
+    color: #592e0d;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*.text-center{ era isso que tava sobrescrevendo o footer. o stylecadastro tem prioridade sobre o style. o css do footer tava no style, mas tinha essa class aqui determinando cores e fonte.
+    font-size: 20px;
+    color: #d08b2a;
+    font-weight: bold;
+}*/
+
+.container2 h2 {
+    font-size: 28px;
+    color: #d08b2a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.observacoes{
+    font-size: 14px;
+    color: #592e0d;
+    font-weight: bold;
+}
+
+/* CSS para estilizar os campos de entrada */
+.form-control {
+    background-color: #fbf6ef !important; /* Cor de fundo dos campos de entrada */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cancelar-link {
+    color: #592e0d; 
+    text-decoration: none; 
+    font-weight: bold;
+    display: block; 
+    margin-top: 10px;
+}
+
+.cancelar-link:hover {
+    text-decoration: underline; 
+    color: #d08b2a; 
+}

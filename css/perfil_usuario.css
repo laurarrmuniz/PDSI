@@ -1,0 +1,147 @@
+body {
+    background-color: white !important;
+    color: black;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+main {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;/* borda arredondada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);/* Sombra suave */
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+
+}
+
+.deletaConta {
+    float: right !important;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;/* Alinha o link no centro*/
+
+}
+
+.deletaConta a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.deletaConta a:hover {
+    color: #891e1e !important;
+    text-decoration:underline;
+
+}
+
+
+.content-container {
+    text-align: center;
+}
+
+section {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0 auto; /* Centraliza a seção se necessário */
+    width: 100%; /* Ajuste a largura se necessário */
+    padding: 10px; /* Adiciona um pouco de preenchimento */
+}
+
+section p {
+    margin: 5px 0; /* Espaçamento vertical entre os parágrafos */
+    white-space: nowrap; /* Evita quebras de linha no texto */
+    overflow: hidden; /* Esconde texto que excede a largura */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+}
+
+section p strong{
+    color: #592e0d;
+}
+
+
+h3 {
+    margin: 10px;
+    color: #592e0d;
+}
+
+
+#editar{
+    background-color: #d08b2a; /* Cor de fundo */
+    color: #592e0d; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Ajusta o preenchimento (padding) */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px; /* Arredondar as bordas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin: 10px;
+  }
+
+#editar:hover{
+    background-color: #592e0d !important;
+    border-color: #d08b2a;
+    color: white;
+}
+
+
+/* Ajustes para telas médias */
+@media (max-width: 768px) {
+    main {
+        width: 80%;
+    }
+}
+
+/* Ajustes para telas pequenas (dispositivos móveis) */
+@media (max-width: 576px) {
+    main {
+        width: 95%;
+    }
+}
+
+/* Ajustes para telas muito pequenas, como 280px */
+@media (max-width: 280px) {
+    main {
+        width: 100%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+}
+
+#botaoDeletar {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botaoDeletar:hover {
+    background-color: #891e1e !important;
+}
+
+.botao, .cancelar-link {
+    margin: 10px 0; /* Espaçamento entre o botão e o link */
+}
+
+/* Remover estilo de foco e clique de botões */
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important; /* Remove a sombra azul ao focar */
+}
+
+.btn:active {
+    box-shadow: none !important; /* Remove a sombra ativa ao clicar */
+}
